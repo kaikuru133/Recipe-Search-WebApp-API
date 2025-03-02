@@ -55,9 +55,8 @@ const onSubmit = e => {
      <input type="submit" value="search" />
     </form>
     <div className="recipes">
-     {recipes !== [] && 
-     recipes.map(recipe=> <Recipe key={uuidv4
-     ()} recipe={recipe} />)}
+    {recipes.length > 0 && recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
+
     </div>
 </div>
   );
